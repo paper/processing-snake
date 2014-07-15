@@ -129,8 +129,6 @@ void showGameOver(){
   fill(120);
   textSize(18);
   text("score / best", 0, 230);
-  
-  textSize(18);
   text("Game over, press 'R' to restart.", 0, 260);
 
   popMatrix();
