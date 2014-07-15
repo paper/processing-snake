@@ -1,6 +1,8 @@
 /*-----------------------------------
   snake game by processing
-  author paper
+  
+  author  paper
+  date    2014-07
 -------------------------------------*/
 
 int w = 10;
@@ -136,7 +138,7 @@ void showGameOver(){
 
 boolean isSnakeDie(){
   //hitting the wall
-  if( snakeHeadX < 0 || snakeHeadX >= width || snakeHeadY <0 || snakeHeadY >= height){
+  if( snakeHeadX < 0 || snakeHeadX >= width || snakeHeadY < 0 || snakeHeadY >= height){
     showGameOver();
     return true;
   }
