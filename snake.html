@@ -6,7 +6,17 @@
   <link rel="shortcut icon" href="images/favicon.ico">
   <style>
     html,body{overflow:hidden; background:#000;}
-    canvas{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);}
+    canvas{
+      position:absolute;
+      left:50%;
+      top:50%;
+      transform:translate(-50%, -50%);
+      -moz-transform:translate(-50%, -50%);
+      -webkit-transform:translate(-50%, -50%);
+      -ms-transform:translate(-50%, -50%);
+      -o-transform:translate(-50%, -50%);
+      outline:none;
+    }
   </style>
   
   <!--<script src="https://raw.githubusercontent.com/processing-js/processing-js/v1.4.8/processing.min.js"></script>-->
