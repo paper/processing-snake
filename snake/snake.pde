@@ -9,6 +9,7 @@ int w = 10;
 int snakeLength = 2;
 int snakeHeadX;
 int snakeHeadY;
+char snakeDirection = 'R';
 
 int maxSnakeLength = 500;
 int[] x = new int[maxSnakeLength];
@@ -33,26 +34,42 @@ void draw() {
   
   if( isGameOver() ){
     return;
-  } 
+  }
 
   background(backgroundColor);
   
-  if (key == CODED) {
+  if (keyPressed && key == CODED) {
     switch(keyCode){
       case LEFT:
-        snakeHeadX -= w;
+        snakeDirection = 'L';
         break;
       case RIGHT:
-        snakeHeadX += w;
+        snakeDirection = 'R';
         break;
       case DOWN:
-        snakeHeadY += w;
+        snakeDirection = 'D';
         break;
       case UP:
-        snakeHeadY -= w;
+        snakeDirection = 'U';
         break;
     }
   }
+  
+  switch(snakeDirection){
+    case 'L':
+      snakeHeadX -= w;
+      break;
+    case 'R':
+      snakeHeadX += w;
+      break;
+    case 'D':
+      snakeHeadY += w;
+      break;
+    case 'U':
+      snakeHeadY -= w;
+      break;
+  }
+  
 
   if( isSnakeDie() ){
     return;
