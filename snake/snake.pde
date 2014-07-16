@@ -109,6 +109,7 @@ void snakeInit(){
   gameOverKey = false;
   snakeHeadX = 0;
   snakeHeadY = 0;
+  snakeDirection = 'R';
 }
 
 void drawFood(int maxWidth, int maxHeight) {

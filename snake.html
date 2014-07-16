@@ -2,15 +2,22 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>snake</title>
+  <title>Snake</title>
+  <link rel="shortcut icon" href="./images/favicon.ico">
   <style>
-    body,html{background:#000;}
-    canvas{background-color:#fff;display:block;margin-left:auto;margin-right:auto;}
+    html,body{overflow:hidden; background:#000;}
+    canvas{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);}
   </style>
   
   <script src="https://raw.githubusercontent.com/processing-js/processing-js/v1.4.8/processing.min.js"></script>
 </head>
 <body>
-  <canvas data-processing-sources="snake/snake.pde"></canvas>
+  <canvas id="J-canvas" tabindex="-1" data-processing-sources="snake/snake.pde"></canvas>
+  
+  <script>
+    var canvas = document.getElementById("J-canvas");
+    canvas.focus();
+    document.documentElement.onclick = function(){ canvas.focus(); }
+  </script>
 </body>
 </html>
