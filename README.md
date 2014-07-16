@@ -1,6 +1,8 @@
 # processing-snake
 snake game by processing
 
+![](./images/game.jpg)
+
 ### 缘由
 
 几年前写过DOM版本的贪吃蛇，这次使用processing来写，
