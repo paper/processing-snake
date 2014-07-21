@@ -15,6 +15,8 @@ snake game by processing
 1. chrome 本地运行不了的童鞋看这里：https://github.com/jeresig/processing-js#loading-processingjs-sketches-locally
 推荐使用最新版本的 [Firefox](http://www.firefox.com.cn/)
 
+2. 试玩地址：http://paper.github.io/processing-snake/snake.html
+
 ### 其他
 
 >  processing 是个不错的东西
