@@ -21,4 +21,4 @@ snake game by processing
 
 >  processing 是个不错的东西
 
->  -- 鲁迅 :D
+>  -- 鲁迅
